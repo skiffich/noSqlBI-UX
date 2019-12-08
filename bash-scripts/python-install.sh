@@ -28,3 +28,14 @@ echo python2-test
 python ../tests/pythonRequestsTest.py
 echo python3-test
 python3 ../tests/pythonRequestsTest.py
+
+echo install redis
+sudo apt-get install redis-server
+sudo systemctl start redis
+pip install redis
+sudo systemctl status redis
+
+echo python2-test
+python ../tests/redisTest.py
+echo python3-test
+python3 ../tests/redisTest.py
