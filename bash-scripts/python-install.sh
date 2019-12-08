@@ -30,10 +30,9 @@ echo python3-test
 python3 ../tests/pythonRequestsTest.py
 
 echo install redis
-sudo apt-get install redis-server
+sudo apt-get install redis-server -y
 sudo systemctl start redis
 pip install redis
-sudo systemctl status redis
 
 echo python2-test
 python ../tests/redisTest.py
