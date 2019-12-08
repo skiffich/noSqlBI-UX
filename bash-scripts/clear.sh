@@ -1,4 +1,4 @@
-rm -rf ./git
+rm -rf .git
 rm -rf bash-scripts
 rm -rf tests
 rm README.md
