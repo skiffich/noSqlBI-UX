@@ -26,4 +26,4 @@ cd bash-scripts
 chmod +x "$PWD/launch.sh"
 chmod +x "$PWD/python-install.sh"
 
-python-install.sh
+sh ./python-install.sh
