@@ -26,5 +26,8 @@ cd bash-scripts
 chmod +x "$PWD/launch.sh"
 chmod +x "$PWD/python-install.sh"
 chmod +x "$PWD/clear.sh"
+chmod +x "$PWD/kafka-server-start.sh"
+chmod +x "$PWD/kafka-create-topics.sh"
+chmod +x "$PWD/servers-stop.sh"
 
 bash ./python-install.sh

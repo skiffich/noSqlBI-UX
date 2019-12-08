@@ -1,3 +1,5 @@
+bash ./servers-stop.sh
+
 rm -rf .git
 rm -rf bash-scripts
 rm -rf tests
