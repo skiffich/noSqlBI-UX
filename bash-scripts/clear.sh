@@ -1,4 +1,4 @@
-bash ./servers-stop.sh
+bash ~/labs/bash-scripts/servers-stop.sh
 
 rm -rf .git
 rm -rf bash-scripts
