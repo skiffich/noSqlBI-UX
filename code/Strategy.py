@@ -62,7 +62,7 @@ class Strategy:
         pfile = open(self.filename, 'r')
         readed = pfile.read()
         pfile.close()
-        producer = KafkaProducer(bootstrap_servers=self.kafkaServer)
+        producer = KafkaProducer(bootstrap_servers=self.kafkaServer, value_serializer=lambda v: json.dumps(v).encode('utf-8'))
         events = json.loads(readed)
         if len(list(events)) >= self.indexFrom + 99:
             self.mredis.set(self.filename, 'read from %s from %i to %i' % (self.filename, self.indexFrom, self.indexFrom + 99))

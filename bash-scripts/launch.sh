@@ -30,5 +30,7 @@ chmod +x "$PWD/kafka-server-start.sh"
 chmod +x "$PWD/kafka-create-topics.sh"
 chmod +x "$PWD/zookeeper-server-start.sh"
 chmod +x "$PWD/servers-stop.sh"
+chmod +x "$PWD/cons1.sh"
+chmod +x "$PWD/cons2.sh"
 
 bash ./python-install.sh
