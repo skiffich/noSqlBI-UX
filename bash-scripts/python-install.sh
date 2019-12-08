@@ -23,3 +23,8 @@ echo !!!!!!!!!!!!!!!!
 
 pip install requests
 pip3 install requests
+
+echo python2-test
+python ../tests/pythonRequestsTest.py
+echo python3-test
+python3 ../tests/pythonRequestsTest.py
