@@ -23,7 +23,7 @@ git pull origin master
 
 cd bash-scripts
 
-export PATH="$PATH:#PWD"
+export PATH="$PATH:$PWD"
 chmod +x "$PWD/python-install.sh"
 
-python-install.sh
+sudo python-install.sh
