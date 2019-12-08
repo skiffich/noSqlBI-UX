@@ -33,6 +33,7 @@ echo install redis
 sudo apt-get install redis-server -y
 sudo systemctl start redis
 pip install redis
+pip3 install redis
 
 echo python2-test
 python ../tests/redisTest.py
