@@ -39,3 +39,14 @@ echo python2-test
 python ../tests/redisTest.py
 echo python3-test
 python3 ../tests/redisTest.py
+
+echo kafka install
+sudo apt install default-jdk
+pip install kafka-python
+pip3 install kafka-python
+cd ~/Downloads
+wget http://www-us.apache.org/dist/kafka/2.2.1/kafka_2.12-2.2.1.tgz
+tar xzf kafka_2.12-2.2.1.tgz
+mv kafka_2.12-2.2.1 /usr/local/kafka
+cd /usr/local/kafka
+bin/zookeeper-server-start.sh config/zookeeper.properties
