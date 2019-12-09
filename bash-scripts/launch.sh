@@ -5,16 +5,25 @@ sudo apt-get upgrade
 sudo apt update
 sudo apt update
 
-echo installing vim
-sudo apt install vim -y
-
+sudo apt-get install vim -y
+sudo apt-get install curl -y
+curl --version
 sudo apt-get install unzip -y
 
-sudo apt-get install openjdk-8-jdk -y
-sudo apt-get install openjdk-8-jre -y
-echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
-source /etc/environment
-echo $JAVA_HOME
+sudo apt install openjdk-8-jdk -y
+sudo apt install openjdk-8-jre -y
+java -version
+curl https://1drv.ms/u/s!ApAsseJ88mCxk9ARyQ1nThCisoq0fQ?e=KqPenJ
+sudo mkdir /usr/lib/jvm/
+sudo tar -zxvf jdk-8u231-linux-x64.tar.gz -C /usr/lib/jvm/
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_231/bin/java 3
+sudo update-alternatives --config java
+export PATH=$PATH:/usr/lib/jvm/jdk1.8.0_231/bin
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_231/
+export JRE_HOME=/usr/lib/jvm/jdk1.8.0_231/jre/
+export J2SDKDIR=/usr/lib/jvm/jdk1.8.0_231/
+export J2REDIR=/usr/lib/jvm/jdk1.8.0_231/jre/
+java --version
 
 echo installing git
 sudo apt-get install git -y
