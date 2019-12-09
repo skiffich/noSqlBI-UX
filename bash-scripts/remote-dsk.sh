@@ -1,11 +1,11 @@
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install gnome-shell
-sudo apt-get install ubuntu-gnome-desktop
-sudo apt-get install autocutsel
-sudo apt-get install gnome-core
-sudo apt-get install gnome-panel
-sudo apt-get install gnome-themes-standard
-sudo apt-get install tightvncserver
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install gnome-shell -y
+sudo apt-get install ubuntu-gnome-desktop -y
+sudo apt-get install autocutsel -y
+sudo apt-get install gnome-core -y
+sudo apt-get install gnome-panel -y
+sudo apt-get install gnome-themes-standard -y
+sudo apt-get install tightvncserver -y
 touch ~/.Xresources
 sudo vim /home/skiff103/.vnc/xstartup
