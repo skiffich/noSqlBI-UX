@@ -41,7 +41,7 @@ echo python3-test
 python3 ../tests/redisTest.py
 
 echo kafka install
-sudo apt install default-jdk -y
+#sudo apt install default-jdk -y
 pip install kafka-python
 pip3 install kafka-python
 # Uncomment for first launch
