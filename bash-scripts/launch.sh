@@ -73,5 +73,6 @@ chmod +x "$PWD/zookeeper-server-start.sh"
 chmod +x "$PWD/servers-stop.sh"
 chmod +x "$PWD/cons1.sh"
 chmod +x "$PWD/cons2.sh"
+chmod +x "$PWD/remote-dsk.sh"
 
 bash ./python-install.sh
