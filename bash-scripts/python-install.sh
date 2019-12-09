@@ -45,7 +45,9 @@ sudo apt install default-jdk -y
 pip install kafka-python
 pip3 install kafka-python
 # Uncomment for first launch
-#wget http://www-us.apache.org/dist/kafka/2.2.1/kafka_2.12-2.2.1.tgz
-#tar xzf kafka_2.12-2.2.1.tgz
-#sudo mv kafka_2.12-2.2.1 /usr/local/kafka
+#'''
+wget http://www-us.apache.org/dist/kafka/2.2.1/kafka_2.12-2.2.1.tgz
+tar xzf kafka_2.12-2.2.1.tgz
+sudo mv kafka_2.12-2.2.1 /usr/local/kafka
+#'''
 bash zookeeper-server-start.sh
